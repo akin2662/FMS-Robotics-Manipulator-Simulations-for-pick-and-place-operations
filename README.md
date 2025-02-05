@@ -76,23 +76,23 @@ This project involved developing a 6-DOF robotic manipulator simulation for a Fl
     
   `ros2 run robot_arm test.py` 
   
-    to run the test script
+     to run the test script
     
   `ros2 run robot_arm gripper.py`
 
-    to turn on the gripper
+     to turn on the gripper
     
   `ros2 run robot_arm odom_pub.py` 
 
-    to plot the trajectory
+     to plot the trajectory
     
   `ros2 service call /CONVEYORPOWER conveyorbelt_msgs/srv/ConveyorBeltControl "{power:20}"` 
  
-    to turn on the conveyor belt
+     to turn on the conveyor belt
 
   `ros2 service call /switch std_srvs/srv/SetBool data:\ false`
 
-    to turn off the gripper
+     to turn off the gripper
 
 ***NOTE:** You will have to run these commands simultaneously in multiple windows
 
