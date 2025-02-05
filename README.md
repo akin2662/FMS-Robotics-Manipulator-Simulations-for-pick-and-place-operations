@@ -41,6 +41,7 @@ This project involved developing a 6-DOF robotic manipulator simulation for a Fl
 7. Then go to the src folder and paste the 'robot_arm','odometry' and 'IFRA_ConveyorBelt' packages, extracted from the zip file you downloaded
 8. Go to the root of the workspace and colcon build. Then source the overlay
 9. Then run the following commands for the simulations:
+    
     **a. For teleop.py:**
 
      `ros2 launch robot_arm gazebo.launch.py`
@@ -77,50 +78,35 @@ This project involved developing a 6-DOF robotic manipulator simulation for a Fl
   
     to run the test script
     
-`ros2 run robot_arm gripper.py`
+  `ros2 run robot_arm gripper.py`
 
-  to turn on the gripper)
-ros2 run robot_arm odom_pub.py (to plot the trajectory)
-ros2 service call /CONVEYORPOWER conveyorbelt_msgs/srv/ConveyorBeltControl "{power:
-20}" - to turn on the conveyor belt
-ros2 service
+    to turn on the gripper
+    
+  `ros2 run robot_arm odom_pub.py` 
 
-**Test case:**
-**Input:**
-Clearance from the obstacles: 5
-Enter the start node : 10 10 30
-Enter the goal node: 580 180
-RPM1 for the robot: 10
-RPM2 for the robot: 10
-Final Cost:  1001.3822195135446
+    to plot the trajectory
+    
+  `ros2 service call /CONVEYORPOWER conveyorbelt_msgs/srv/ConveyorBeltControl "{power:20}"` 
+ 
+    to turn on the conveyor belt
 
-**Output:**
- reached the goal
-Runtime: 25.256956100463867 seconds
-note:a video will be saved in the same directory as the code!
+  `ros2 service call /switch std_srvs/srv/SetBool data:\ false`
 
-### Part2:
-1. Place the turtlebot3_project3 package in source folder of your workspace
-2. colcon build
-3. source install/setup.bash
-4. ros2 launch turtlebot3_project3 competition_world.launch.py
-5. In new terminal,source install/setup.bash
-6. ros2 run turtlebot3_project3 part2_new.py
-7. Input the values as asked in the terminal
+    to turn off the gripper
 
-**Test case:**
-**Input:**
-1. Clearance: 0.01
-2. Start coordinates and angle: 0 0 0
-3. Goal coordinates: 5.1 0
-4. RPM1 and RPM2: 10 16
+***NOTE:** You will have to run these commands simultaneously in multiple windows
 
-## Demo videos:
-Following are the links to the recorded simulation
-part1: https://drive.google.com/file/d/14HxtT1DbY8zS777Tv_Qrf_5FtBZ3wkad/view?usp=sharing
-part2: https://drive.google.com/file/d/1IWEEaPTUh4zzWwEZcqSbLXrzmgNFMoEE/view?usp=sharing
+## Acknowledgment:
+Following repos have been useful for this project
 
-***NOTE:** The simulation environment (world) in gazebo is taken from https://github.com/shantanuparabumd/turtlebot3_project3.git as required for ENPM 661 Project3 Phase2
+1. This project includes code from [IFRA_ConveyorBelt] by IFRA-Group, Cranfield University,  
+licensed under the Apache License 2.0. You can find the original source [here](https://github.com/IFRA-Cranfield/IFRA_ConveyorBelt.git).
+
+2. It also includes code from [ENPM-662-Introduction-to-Robot-Modelling] by Shantanu Parab, University of Maryland, College Park. You can find the original source [here](https://github.com/shantanuparabumd/ENPM-662-Introduction-to-
+Robot-Modelling.git).
+
+
+
 
 
 
