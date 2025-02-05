@@ -102,8 +102,7 @@ Following repos have been useful for this project
 1. This project includes code from [IFRA_ConveyorBelt] by IFRA-Group, Cranfield University,  
 licensed under the Apache License 2.0. You can find the original source [here](https://github.com/IFRA-Cranfield/IFRA_ConveyorBelt.git).
 
-2. It also includes code from [ENPM-662-Introduction-to-Robot-Modelling] by Shantanu Parab, University of Maryland, College Park. You can find the original source [here](https://github.com/shantanuparabumd/ENPM-662-Introduction-to-
-Robot-Modelling.git).
+2. It also includes code from [ENPM-662-Introduction-to-Robot-Modelling] by Shantanu Parab, University of Maryland, College Park. You can find the original source [here](https://github.com/shantanuparabumd/ENPM-662-Introduction-to-Robot-Modelling.git).
 
 
 
