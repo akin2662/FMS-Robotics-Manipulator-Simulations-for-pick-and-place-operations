@@ -72,7 +72,7 @@ This project involved developing a 6-DOF robotic manipulator simulation for a Fl
 
    `ros2 launch robot_arm gazebo.launch.py` 
    
-    to spawn the robot in custom world 'pick_place_can.world' in gazebo
+     to spawn the robot in custom world 'pick_place_can.world' in gazebo
     
   `ros2 run robot_arm test.py` 
   
