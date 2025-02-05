@@ -74,23 +74,23 @@ This project involved developing a 6-DOF robotic manipulator simulation for a Fl
    
      to spawn the robot in custom world 'pick_place_can.world' in gazebo
     
-  `ros2 run robot_arm test.py` 
+    `ros2 run robot_arm test.py` 
   
      to run the test script
     
-  `ros2 run robot_arm gripper.py`
+    `ros2 run robot_arm gripper.py`
 
      to turn on the gripper
     
-  `ros2 run robot_arm odom_pub.py` 
+    `ros2 run robot_arm odom_pub.py` 
 
      to plot the trajectory
     
-  `ros2 service call /CONVEYORPOWER conveyorbelt_msgs/srv/ConveyorBeltControl "{power:20}"` 
+    `ros2 service call /CONVEYORPOWER conveyorbelt_msgs/srv/ConveyorBeltControl "{power:20}"` 
  
      to turn on the conveyor belt
 
-  `ros2 service call /switch std_srvs/srv/SetBool data:\ false`
+    `ros2 service call /switch std_srvs/srv/SetBool data:\ false`
 
      to turn off the gripper
 
