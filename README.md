@@ -1,5 +1,4 @@
 # FMS-Robotics-Manipulator-Simulations-for-pick-and-place-operations
-**Note:** This project was a requirement for the course ENPM 662- Introduction to Robot Modeling at University of Maryland, College Park
 
 ## Project Description:
 This project involved developing a 6-DOF robotic manipulator simulation for a Flexible Manufacturing System (FMS) to automate pick-and-place operations, focusing on the implementation of forward and inverse kinematics as well as Lagrangian dynamics. The manipulator was designed in SolidWorks and exported as a URDF file using the SW2URDF exporter.Python and NumPy were used for kinematic calculations, enabling precise robot control and trajectory planning. A custom Gazebo simulation environment was created, where the fully functional manipulator successfully performed pick-and-place operations, mimicking real-world FMS automation.
